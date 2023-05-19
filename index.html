@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <!--to render compatable with the latest version  of internet explorer, which is edge-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Home page</title>  
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Cabin+Sketch&family=Nobile&family=Syne:wght@500&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <!--Swiper is a JavaScript library that creates modern touch sliders with hardware-accelerated transitions-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+</head>
+<body>
+    <!--Container-->
+    <div class="container"></div>
+    <!--Navigation-->
+        <nav class="navbar"> 
+            <div class="logo">          
+                <a href="index.html">                   
+                    <img src="images/logo.png" alt="logo">                   
+                </a>   
+            </div> 
+            <div class="navigation">                           
+                <a href="index.html"><strong>Home</strong></a>
+                <a href="thingstodo.html"><strong>To do</strong></a>
+                <a href="upcomingevents.html"><strong>Events</strong></a>
+                <a href="placestoeatanddrink.html"><strong>Food & drink</strong></a>
+                <a href="wheretostay.html"><strong>To stay</strong></a>
+                <a href="shopping.html"><strong>Shopping</strong></a>                  
+            </div>                  
+        </nav> 
+    <!--End of Navigation-->  
+    <!--Landing-->
+    <section class="landing">
+        <!-- Slideshow container -->
+        <div class="banner">
+            <h3 class="main-heading">Explore Peterborough</h3>
+            <h1>Looking for something to do in Peterborough?</h1>
+            <p>Find things to do, places to eat, events to enjoy, and attractions to see.</p>
+        </div>
+        <!--Swiper slides-->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">                
+                <div class="swiper-slide">
+                    <img src="images/banner2.png" alt="">
+                </div>            
+                <div class="swiper-slide">
+                    <img src="images/banner3.png" alt="">
+                </div>            
+                <div class="swiper-slide">
+                    <img src="images/banner4.png" alt="">
+                </div>                
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        
+    </section>
+    <!--End of landing-->
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="signature">        
+         &copy; 2023, All Right Reserved, Peterborough Tourism 
+        </div>     
+    </footer>
+    <!--End of Footer-->   
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="javascript/global.js"> </script>
+</body>
+</html>

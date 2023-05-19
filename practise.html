@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Practise</title>
+        
+    </head>
+    <body>
+        
+
+        <script language="JavaScript">
+        
+        monthArray = new Array(12);
+        
+        monthArray[1]="January";
+        
+        monthArray[2]="February";
+        
+        monthArray[3]="March";
+        
+        monthArray[4]="April";
+        
+        monthArray[5]="May";
+        
+        monthArray[6]="June";
+        
+        monthArray[7]="July";
+        
+        monthArray[8]="Auguest";
+        
+        monthArray[9]="September";
+        
+        monthArray[10]="October";
+        
+        monthArray[11]="November";
+        
+        monthArray[12]="December";
+        
+        var user_month = 0;
+        
+        var user_day = 0;
+        
+        var user_year = 0;
+        var attempt = False
+        while (attempt == False) {
+            
+        user_month = prompt("Enter the month as a number",0);
+        if (user_month.contains(monthArray) )
+        
+        user_day = prompt("Enter the day",0);
+        
+        user_year = prompt("Enter the year",0);
+        
+        document.write("The date is " + monthArray[user_month] + " " + user_day + ", " + user_year); };
+        
+        </script>
+        
+        
+    </body>
+
+</html>
