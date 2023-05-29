@@ -5,11 +5,12 @@
     <!--to render compatable with the latest version  of internet explorer, which is edge-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Home page</title>  
+    <title>Peterborough Tourism</title>  
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Cabin+Sketch&family=Nobile&family=Syne:wght@500&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <!--Font Aweome library for nice icons-->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -22,7 +23,7 @@
 </head>
 <body>
     <!--Container-->
-    <div class="container"></div>
+    <div class="container">
     <!--Navigation-->
         <nav class="navbar"> 
             <div class="logo">          
@@ -41,42 +42,176 @@
         </nav> 
     <!--End of Navigation-->  
     <!--Landing-->
-    <section class="landing">
-        <!-- Slideshow container -->
-        <div class="banner">
-            <h3 class="main-heading">Explore Peterborough</h3>
-            <h1>Looking for something to do in Peterborough?</h1>
-            <p>Find things to do, places to eat, events to enjoy, and attractions to see.</p>
-        </div>
-        <!--Swiper slides-->
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">                
-                <div class="swiper-slide">
-                    <img src="images/banner2.png" alt="">
-                </div>            
-                <div class="swiper-slide">
-                    <img src="images/banner3.png" alt="">
-                </div>            
-                <div class="swiper-slide">
-                    <img src="images/banner4.png" alt="">
-                </div>                
+        <section class="landing">
+            <!-- Slideshow container -->
+            <div class="banner">
+                <h3 class="main-heading">Explore Peterborough</h3>
+                <h1>Looking for something to do in Peterborough?</h1>
+                <p>Find things to do, places to eat, events to enjoy, and attractions to see for the whole family.</p>
             </div>
-            <div class="swiper-pagination"></div>
-        </div>
-        
-    </section>
-    <!--End of landing-->
-
-    <!--Footer-->
-    <footer class="footer">
-        <div class="signature">        
-         &copy; 2023, All Right Reserved, Peterborough Tourism 
-        </div>     
-    </footer>
-    <!--End of Footer-->   
-</div>
+            <!--Swiper slides-->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">                
+                    <div class="swiper-slide">
+                        <img src="images/banner2.png" alt="">
+                    </div>            
+                    <div class="swiper-slide">
+                        <img src="images/banner3.png" alt="">
+                    </div>            
+                    <div class="swiper-slide">
+                        <img src="images/banner8.png" alt="">
+                    </div>                
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="landing-fact">
+                <div class="fact">
+                    <i class="fa-solid fa-city"></i>
+                    <div>
+                        <span>According to the lastest census,</span>
+                        <span>Peterborough is one of the fastest growing cities in the UK.</span>
+                    </div>
+                </div>                
+            </div>        
+        </section>
+        <!--End of landing-->
+        <!--Popular places-->
+        <section class="popular-places">
+          <div class="top-heading">
+            <h1>Popular Places to See and Do</h1>
+          </div>
+          <div class="popular-images">
+              <div class="img-des-wrapper">                                    
+                <a target="_blank" href="img_forest.jpg">
+                  <img src="images/popular3.png" alt="Peterborough Cathedral">                        
+                </a>
+                <div class="image-description"><p>Peterborough Cathedral</p></div> 
+              </div>        
+              <div class="img-des-wrapper">                    
+                <a target="_blank" href="img_forest.jpg">
+                  <img src="images/popular2.png" alt="Queensgate shopping Centre">                        
+                </a>                     
+                <div class="image-description"><p>Queensgate Shopping Centre</p></div>                   
+              </div>
+              <div class="img-des-wrapper">                    
+                <a target="_blank" href="img_forest.jpg">
+                    <img src="images/banner6.png" alt="Forest">                        
+                </a>                     
+                <div class="image-description"><p>Nene Valey Railway</p></div>                   
+              </div>
+              <div class="img-des-wrapper">                   
+                <a target="_blank" href="img_forest.jpg">
+                  <img src="images/popular4.png" alt="Forest">                        
+                </a>                    
+                <div class="image-description"><p>Flag Fen</p></div>                   
+              </div>
+          </div>
+        </section>        
+        <!--End of Popular places-->
+        <!--Map-->
+        <section class="map">
+            <div class="map-left">
+                <div class="map-heading">
+                    <h1>Where is Peterborough?</h1>
+                </div>
+            </div>
+            <div class="map-righ">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d155145.7712030992!2d-0.30045315!3d52.58493285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8077dccaa4605%3A0xaefe2de1d96d8dd5!2sPeterborough!5e0!3m2!1sen!2suk!4v1685124860662!5m2!1sen!2suk" 
+                width="725" height="425" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>            
+        </section>
+        <!--End of Map-->
+        <!--Other Fact-->
+        <section class="other-fact">
+          <div class="fact">
+            <i class="fa-solid fa-tree-city"></i>
+            <div>
+              <span>Peterborough is named 'UK's greenest city'</span>
+              <span>Study reveals one in nine homes have solar panels on the roof.</span>
+            </div>
+          </div>
+        </section>   
+        <!--End of Other Fact-->
+        <!--Inspire Me-->
+        <section class="popular-places">
+          <div class="top-heading">
+            <h1>Inspire Me</h1>
+          </div>
+          <div class="popular-images">
+              <div class="img-des-wrapper">                                    
+                <a target="_blank" href="img_forest.jpg">
+                  <img src="images/InspireMe1.png" alt="Stamford Arts Centre">                        
+                </a>
+                <div class="image-description"><p>Stamford Arts Centre</p></div> 
+              </div>        
+              <div class="img-des-wrapper">                    
+                <a target="_blank" href="img_forest.jpg">
+                  <img src="images/InspireMe2.png" alt="Dinosour with hatching eggs">                        
+                </a>                     
+                <div class="image-description"><p>T.rex: The Killer Question</p></div>                   
+              </div>
+              <div class="img-des-wrapper">                    
+                <a target="_blank" href="img_forest.jpg">
+                    <img src="images/InspireMe3.png" alt="Outdoor Waterpark">                        
+                </a>                     
+                <div class="image-description"><p>Fenland Aquapark</p></div>                   
+              </div>
+              <div class="img-des-wrapper">                   
+                <a target="_blank" href="img_forest.jpg">
+                  <img src="images/InspireMe4.png" alt="Nightclub">                        
+                </a>                    
+                <div class="image-description"><p>Met Lounge</p></div>                   
+              </div>
+          </div>
+        </section>        
+        <!--End of Inspire Me-->
+        <!--Cutomers-->
+      <section class="footer-nav">        
+        <div class="columns">
+          <div class="column">
+            <h3>Follow us:</h3>
+            <div class="icons">
+              <a target="_blank" href="#"><i class="fa-brands fa-square-instagram"></i></a>
+              <a target="_blank" href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a target="_blank" href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+          </div>
+          <div class="column">            
+            <div>              
+            </div>
+          </div>
+          <div class="column">            
+            <div class="list">                
+                <a href="thingstodo.html"><strong>To do</strong></a>
+                <a href="upcomingevents.html"><strong>Events</strong></a>
+                <a href="placestoeatanddrink.html"><strong>Food & drink</strong></a>
+                <a href="wheretostay.html"><strong>To stay</strong></a>
+                <a href="shopping.html"><strong>Shopping</strong></a>
+            </div>
+          </div>
+          <div class="column">            
+            <div>             
+            </div>
+          </div>
+          <div class="column">            
+            <div class="list">
+              <a href="index.html"><strong>Contact us</strong></a>
+              <a href="thingstodo.html"><strong>Terms & Conditions</strong></a>                
+            </div>
+            </div>
+          </div>          
+      </section>
+      <!--End of Cutomers-->
+        <!--Footer-->        
+        <footer class="footer">
+            <div class="signature">        
+            &copy; 2023, All Rights Reserved, Peterborough Tourism 
+            </div>     
+        </footer>
+        <!--End of Footer-->   
+    </div>
+    <!--End of Container-->
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-<script src="javascript/global.js"> </script>
-<!---->
+<script src="global.js"> </script>
 </body>
 </html>
