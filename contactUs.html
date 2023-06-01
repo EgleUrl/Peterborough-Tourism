@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <!--to render compatable with the latest version  of internet explorer, which is edge-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Contact us</title>  
+    <!--for SEO-->
+    <meta name="description" content="Visit, explore and discover Peterborough city in the UK. Things to see, key sites, shopping, places to eat and where to stay in Peterborough for families.">
+    <meta name="author" content="Egle Urlike P110127469">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Lato:wght@300;400;700;900&family=Nobile:wght@400;500;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css"/>
+    
+    <!--Font Aweome library for nice icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <!--Swiper is a JavaScript library that creates modern touch sliders with hardware-accelerated transitions-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+</head>
+<body>
+    <!--Container-->
+    <div class="container">
+    <!--Navigation-->
+        <nav class="navbar"> 
+            <div class="logo">          
+                <a href="index.html">                   
+                    <img src="images/logo.png" alt="logo">                   
+                </a>   
+            </div> 
+            <div class="navigation">                           
+                <a href="index.html"><strong>Home</strong></a>
+                <a href="thingsToDo.html"><strong>To do</strong></a>
+                <a href="events.html"><strong>Events</strong></a>
+                <a href="toEat&Drink.html"><strong>Food & drink</strong></a>
+                <a href="toStay.html"><strong>To stay</strong></a>
+                <a href="shopping.html"><strong>Shopping</strong></a>                  
+            </div>                  
+        </nav>        
+    <!--End of Navigation-->
+    <!--Support Navigation-->
+    <section class="support-nav">
+      <div class="filling">        
+      </div>
+    </section>
+    <!--End of Support Navigation-->
+    <!--Other Fact-->
+    <section class="other-fact">
+      <div class="fact">
+        <i class="fa-solid fa-circle-question"></i>
+        <div>
+          <span>Looking for answers?</span>
+          <span>Please fill the form bellow for any enquiries</span>
+        </div>
+      </div>
+    </section>   
+    <!--End of Other Fact-->
+    <!--Between-->
+    <section class="between">
+      <div class="information">
+        <p>Your opinion and enquiries are important, we will reply in three 
+          working days.</a>  
+        </p>
+      </div>
+    </section>
+    <!--Contacts-->
+    <section class="contact">
+        <div class="contact-left"></div>
+        <div class="contact-right">
+          <form action="" onsubmit="return validateForm()" method="get">
+            <h1>Contact us</h1>
+            <div class="input-group">
+              <input type="text" id="fname" placeholder="First Name" >
+              <input type="text" id="lname" placeholder="Last Name" >
+            </div>
+            <div class="input-group">
+              <input type="text" id="email" placeholder="Email Address" >
+              <input type="tel" id="phone"  placeholder="Phone" >
+            </div>
+            <div class="input-group">
+              <textarea placeholder="Message" optional></textarea>
+              <button type="submit" class="contact-btn">Submit</button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <!--End of Contacts-->
+      <!--Between-->
+      <section class="between">
+        <div class="information">
+          <p>By accessing and using this website you are accepting 
+            the <a href="terms&Conditions.html">terms of use policy.</a>  
+          </p>
+        </div>
+      </section>
+      <!--End of Between-->      
+       <!--Footer Navigation-->
+       <section class="footer-nav">        
+        <div class="columns">
+          <div class="column">
+            <h3>Follow us:</h3>
+            <div class="icons">
+              <a target="_blank" href="https://www.instagram.com/peterboroughlife/"><i class="fa-brands fa-square-instagram"></i></a>
+              <a target="_blank" href="https://www.facebook.com/groups/wearepeterborough"><i class="fa-brands fa-facebook"></i></a>
+              <a target="_blank" href="https://twitter.com/PboroWhatsOn"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+          </div>
+          <div class="column">            
+            <div>              
+            </div>
+          </div>
+          <div class="column">            
+            <div class="list">                
+                <a href="thingstodo.html"><strong>To do</strong></a>
+                <a href="upcomingevents.html"><strong>Events</strong></a>
+                <a href="placestoeatanddrink.html"><strong>Food & drink</strong></a>
+                <a href="wheretostay.html"><strong>To stay</strong></a>
+                <a href="shopping.html"><strong>Shopping</strong></a>
+            </div>
+          </div>
+          <div class="column">            
+            <div>             
+            </div>
+          </div>
+          <div class="column">            
+            <div class="list">
+              <a id="active" href="ContactUs.html"><strong>Contact us</strong></a>
+              <a href="terms&Conditions.html"><strong>Terms & Conditions</strong></a>                
+            </div>
+            </div>
+          </div>          
+      </section>
+      <!--End of Footer Navigation-->
+        <!--Footer-->        
+        <footer class="footer">
+            <div class="signature">        
+            &copy; 2023, All Rights Reserved, Peterborough Tourism 
+            </div>     
+        </footer>
+        <!--End of Footer-->   
+    </div>
+    <!--End of Container-->
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="global.js"> </script>
+</body>
+</html>  
