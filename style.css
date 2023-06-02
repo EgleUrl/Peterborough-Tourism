@@ -6,6 +6,7 @@ font-family: 'Nobile', sans-serif;*/
     padding: 0;
     box-sizing: border-box;    
     text-decoration: none;
+    list-style: none;
     outline: none;
     font-family: 'Lato', sans-serif;    
 }
@@ -25,25 +26,29 @@ html {
     height: 8rem;
     top: 0;
     left: 0;    
-    z-index: 300;  
+    z-index: 100;  
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     position: fixed;
     border-bottom: 0.1rem solid #fff;
     transition: all 0.5s;
+    z-index: 300;
 }
 .sticky.navbar {
     height: 10rem;
     background-color: #F2F2F2;    
 }
 .logo {
-    position: relative;
+    display: flex;
+    
 }
 .logo img {    
     width: 105%; 
-    height: 100%;   
-    display: block;           
+    height: 100%; 
+    max-width: 75%; 
+    align-self: baseline; 
+    display: flex;           
 }
 .navigation a {
     color:  #788C30;    
@@ -239,7 +244,12 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::after{
 }
 .map-right {
     width: 55%;
+    height: auto;
     margin-left: 3rem;    
+}
+.map iframe {
+    width: 80rem;
+    height: 44rem;
 }
 /*ENd of Map*/
 /*Other Fact*/
@@ -657,8 +667,8 @@ footer  {
 /*Resposive*/
 @media(max-width: 1500px) {
     html {
-        font-size: 55%;        
-    }
+        font-size: 55%;                
+    }   
 }
 @media(max-width: 1300px) {
     html {
@@ -669,26 +679,30 @@ footer  {
     html {
         font-size: 45%;        
     }
+    .map {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;        
+    }
+    .map iframe {
+        max-width: 100%;
+    }    
     .menu-img-wrapper {
         width: 18rem;
         height: 18rem;
     }
-    .customers {
-        height: 120vh;
+    .menu-right {
+        align-items: center;
+        
     }
-    .clients {
-        flex-direction: column;
+    .display-left {
+        align-items: center;
+        
     }
-    .client {
-        width: 100%;
-        height: 15rem;
-    }
-    .client:nth-child(2) {
-        height: 15rem;
-    }
-    .client:nth-child(4) {
-        height: 15rem;
-    }
+    .display-img-wrapper {
+        width: 18rem;
+        height: 18rem;
+    }    
     .contact-left {
         display: none;
     }
@@ -703,36 +717,28 @@ footer  {
     .landing-contact div span:nth-child(2) {
         display: none;
     }
+    .menu {
+        flex-direction: column;
+    }
+    .display {
+        flex-direction: column;
+    }
     .menu-left {
         width: 100%;
         text-align: center;
         margin-right: 0;
     }
+    .display-right {
+        width: 100%;
+        text-align: center;
+        margin-right: 0;
+    }
     .menu-left p{
+        margin: 2rem auto 6rem auto;
+    }
+    .display-right p {
         margin: 2rem auto 4rem auto;
-    }
-    .menu-right {
-        display: none;
-    }
-    .customers {
-        height: 140vh;
-    }
-    .customers h1 {
-        width: 50rem;
-        margin: auto;
-    }
-    .customers-banner p {
-        width: 60rem;
-    }
-    .client {
-        height: 18rem;
-    }
-    .client:nth-child(2) {
-        height: 18rem;
-    }
-    .client:nth-child(4) {
-        height: 18rem;
-    }
+    }    
     .input-group {
         flex-direction: column;
     }
@@ -747,33 +753,37 @@ footer  {
     html {
         font-size: 35%;
     }
-    .landing-contact {
-        height: 19rem;
-        flex-direction: column;
-        align-items: center;
+    .logo img {
+        max-width: 55%;
     }
-    .details div {
-        width: 20rem;
-    }
-    .about {
-        height: 80vh;
-        flex-direction: column;
-    }
-    .about div {
-        width: 60rem;
-        margin: 0 2rem;
-    }
-    .customers {
-        height: 110vh;
-    }
+    
 }
 @media(max-width: 450px) {
     .logo {
         display: none;
     }
-    .customers {
-        height: 120vh;
+    .map h1 {
+        font-size: 4rem;
     }
+    .landing-fact i {
+        display: none;
+    }
+    .other-fact i{
+        display: none;
+    }
+    .slides-gallery {
+        align-items: center;
+        margin-left: 0;
+    }
+    .column h3{
+        display: none;
+    }
+    .icons {
+        flex-direction: column;               
+    }
+    .icons a{
+        margin: 0 0 0.2rem 0.5rem;
+    }    
     .input-group input, textarea, .contact-btn {
         width: 50rem;
     }
